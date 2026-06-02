@@ -1,0 +1,26 @@
+The S-Analyzer (Sane) for everyone.
+I was lookig for a cheap, no-nonsense logic analyzer, but I couldn't find one. So that’s how this project started.
+The design is heavily inspired by the original 16-channel open-source concept out there already proven to work, but I noticed that project suffered from frustrating signal timing issues at higher frequencies. So, I sat down with the same MCU family and decided to try and fix the hardware pipeline to eliminate those glitches. While I was at it, the specs just sort of followed along and options that got added.
+Instead of staying at the usual 16 or 32 channels, I came to the conclusion to use the RP2354B instead of its smaller cousin. Since the extra I/Os were already right there on the chip, why not use them? I stretched the layout to a full 42 channels total (40 channels + 2 triggers) on a single, clean board. No clumsy expansion boards, no extra clutter, and no signal degradation from multi-board mess.
+Why 42 channels?
+Because 32 channels is the limit for most standard systems. If you are sniffing a full 32-bit data or address bus, a standard 32-channel analyzer leaves you completely blind. With 42 channels, you can capture the entire bus and still have pins left over to see what the clock, interrupt, and control lines are doing in the exact same nanosecond.
+The Specs:
+    • PLEASE BE AWARE THIS IS AN EXPERIMENTAL BOARD SINCE I HAVE NOT
+    • BEEN ABLE TO CONFIRM THAT THIS WILL WORK DUE TO MCU’s
+    • INTERNAL ARCHITECTURE AND THAT IS A 1380 PAGES TO READ AND GRASP
+    • ON TOP OF THAT THERE IS AN ERRATA THAT INCLUDES THE QUIRKS
+    • 40 Channels + 2 Dedicated Triggers
+    • Single-board design (Zero expansion boards needed)
+    • RP2354B ARM Core architecture
+    • LDOs for power regulation to keep noise low
+    • Adjustable 1.1V rail for potential overclocking headroom
+    • Selectable & 5V-tolerant inputs: 5V, 3.3V, 2.5V, and 1.8V support
+    • 4 x 64Mbit onboard memory chips for massive sample storage
+    • Built with cheap, standard components (Easy to source, robust to solder at home)
+    • Fixed hardware pipelining for rock-solid signal integrity
+    • All signal traces are 0.005mil lenght diff 
+    • Made with 0603, 0805 and 1206 for serviceability
+    • The are 2 extra input on board that are directly connected to MCU(3v3) so be aware of that
+This is an analyzer for regular hobbyists, students, and retro-engineers who want a sane, reliable tool without breaking the bank. Best of all, it's completely flexible: if you don’t need the extra memory chips or all the channels, just populate the board with what you want for your specific build and go from there.
+It does exactly what it needs to do. If you need something faster or shinier than this, the multi-million dollar manufacturers have plenty of expensive options for you.
+For the rest of us, here is the hardware. Have fun writing the software for it.
