@@ -22,21 +22,37 @@ bus and still have pins left over to see what the clock, interrupt, and control 
 same nanosecond.
 
 The Specs:
+
     • PLEASE BE AWARE THIS IS AN EXPERIMENTAL BOARD SINCE I HAVE NOT
+
     • BEEN ABLE TO CONFIRM THAT THIS WILL WORK DUE TO MCU’s
+    
     • INTERNAL ARCHITECTURE AND THAT IS A 1380 PAGES TO READ AND GRASP
+    
     • ON TOP OF THAT THERE IS AN ERRATA THAT INCLUDES THE QUIRKS
+    
     • 40 Channels + 2 Dedicated Triggers
+    
     • Single-board design (Zero expansion boards needed)
+    
     • RP2354B ARM Core architecture
+    
     • LDOs for power regulation to keep noise low
+    
     • Adjustable 1.1V rail for potential overclocking headroom
+    
     • Selectable & 5V-tolerant inputs: 5V, 3.3V, 2.5V, and 1.8V support
+    
     • 4 x 64Mbit onboard memory chips for massive sample storage
+    
     • Built with cheap, standard components (Easy to source, robust to solder at home)
+    
     • Fixed hardware pipelining for rock-solid signal integrity
+    
     • All signal traces are 0.005mil lenght diff 
+    
     • Made with 0603, 0805 and 1206 for serviceability
+    
     • The are 2 extra input on board that are directly connected to MCU(3v3) so be aware of that
 
 This is an analyzer for regular hobbyists, students, and retro-engineers who want a sane, reliable tool without
