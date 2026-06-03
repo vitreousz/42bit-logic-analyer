@@ -1,4 +1,4 @@
-# 42bitLogicAnalyer
+# 42bitLogicAnalyzer
 a try to improve and enhance dr. gusman 24 bit logic analyzer plz read project summary
 
 The S-Analyzer (Sane) for everyone.
