@@ -4,7 +4,7 @@ a try to improve and enhance dr. gusman 16 bit logic analyzer plz read project s
 The S-Analyzer (Sane) for everyone.
 I was lookig for a cheap, no-nonsense logic analyzer, but I couldn't find one. So that’s how this project started.
 
-The design is heavily inspired by the original 16-channel open-source concept out there already proven to work,
+The design is heavily inspired by the original 24-channel open-source concept out there already proven to work,
 but I noticed that project suffered from frustrating signal timing issues at higher frequencies. So, I sat down
 with the same MCU family and decided to try and fix the hardware pipeline to eliminate those glitches. While I
 was at it, the specs just sort of followed along and options that got added.
