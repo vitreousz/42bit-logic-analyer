@@ -65,3 +65,6 @@ If you need something faster or shinier than this, the multi-million dollar manu
 expensive options for you.
 
 For the rest of us, here is the hardware. Have fun writing the software for it.
+
+Recently realizing that my board isnt even needed to start developing firmware and gui, when the mcu is
+only reading inputs. So any development boards with RP2354B will suffice to start with.
