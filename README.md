@@ -1,5 +1,5 @@
 # 42bit-logic-analyer
-a try to improve and enhance dr. gusman 16 bit logic analyzer plz read project summary
+a try to improve and enhance dr. gusman 24 bit logic analyzer plz read project summary
 
 The S-Analyzer (Sane) for everyone.
 I was lookig for a cheap, no-nonsense logic analyzer, but I couldn't find one. So that’s how this project started.
