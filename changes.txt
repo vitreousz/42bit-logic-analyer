@@ -1,10 +1,12 @@
+Project: Logic Analyzer
+Version: 1.1
+Date: 2026-06-03
+-----------------------------------------------------------
 modified nets for better readability
 on pins
-
 DVDD_1
 DVDD_2
 DVDD_3
-
 IODVDD1
 IODVDD2
 IODVDD3
@@ -13,7 +15,5 @@ IODVDD5
 IODVDD6
 IODVDD7
 IODVDD8
-
 USB_OTP_VDD
-
 VREG_VIN
