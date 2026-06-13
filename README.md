@@ -26,7 +26,7 @@ and known errata quirks.
 
 The Specs:
 
-    • All this for less than $100 in parts and pcb" 
+    • All this for less than $100 in parts and pcb
 
     • 40 Channels + 2 Dedicated Triggers
     
