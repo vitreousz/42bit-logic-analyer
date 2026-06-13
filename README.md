@@ -1,38 +1,31 @@
 # 42bitLogicAnalyzer
 42 bit logic analyzer
+A project to improve and enhance Dr. Gusman’s 24-bit logic analyzer concept.
+The S-Analyzer (Sane) for Everyone
 
-a try to improve and enhance dr. gusman 24 bit logic analyzer plz read project summary
+I was looking for a cheap, no-nonsense logic analyzer, but I couldn't find one. So that’s how this project started.
 
-The S-Analyzer (Sane) for everyone.
-I was lookig for a cheap, no-nonsense logic analyzer, but I couldn't find one. So that’s how this project started.
+The design is heavily inspired by the original 24-channel open-source concept that is already proven to work. However,
+I noticed that the original project suffered from frustrating signal timing issues at higher frequencies. I sat down
+with the same MCU family and decided to fix the hardware pipeline to eliminate those glitches. While I was at it,
+the specs expanded significantly.
 
-The design is heavily inspired by the original 24-channel open-source concept out there already proven to work,
-but I noticed that project suffered from frustrating signal timing issues at higher frequencies. So, I sat down
-with the same MCU family and decided to try and fix the hardware pipeline to eliminate those glitches. While I
-was at it, the specs just sort of followed along and options that got added.
+Instead of staying at 16 or 32 channels, I chose the RP2354B. Since the extra I/Os were available on the chip, I
+stretched the layout to a full 42 channels total (40 channels + 2 triggers) on a single, clean board. No clumsy
+expansion boards, no extra clutter, and no signal degradation from multi-board mess.
 
-Instead of staying at the usual 16 or 32 channels, I came to the conclusion to use the RP2354B instead of its
-smaller cousin. Since the extra I/Os were already right there on the chip, why not use them? I stretched the
-layout to a full 42 channels total (40 channels + 2 triggers) on a single, clean board. No clumsy expansion
-boards, no extra clutter, and no signal degradation from multi-board mess.
+Why 42 Channels?
+32 channels is the limit for most standard systems. If you are sniffing a full 32-bit data or address bus, a
+standard 32-channel analyzer leaves you completely blind. With 42 channels, you can capture the entire bus
+and still have pins left over to monitor the clock, interrupt, and control lines in the exact same nanosecond.
 
-Why 42 channels?
-
-Because 32 channels is the limit for most standard systems. If you are sniffing a full 32-bit data or address
-bus, a standard 32-channel analyzer leaves you completely blind. With 42 channels, you can capture the entire
-bus and still have pins left over to see what the clock, interrupt, and control lines are doing in the exact
-same nanosecond.
+Project Status: Experimental
+Please be aware that this board is currently in the development stage. I have not yet confirmed the final
+schematic integrity due to the extreme complexity of the RP2354B internal architecture (which spans a 1380-page manual)
+and known errata quirks.
 
 The Specs:
 
-    • PLEASE BE AWARE THIS IS AN EXPERIMENTAL BOARD SINCE I HAVE NOT
-
-    • BEEN ABLE TO CONFIRM THAT THIS WILL WORK DUE TO MCU’s
-    
-    • INTERNAL ARCHITECTURE AND THAT IS A 1380 PAGES TO READ AND GRASP
-    
-    • ON TOP OF THAT THERE IS AN ERRATA THAT INCLUDES THE QUIRKS
-    
     • 40 Channels + 2 Dedicated Triggers
     
     • Single-board design (Zero expansion boards needed)
@@ -68,5 +61,9 @@ expensive options for you.
 
 For the rest of us, here is the hardware. Have fun writing the software for it.
 
-Recently realizing that my board isnt even needed to start developing firmware and gui, when the mcu is
-only reading inputs. So any development boards with RP2354B will suffice to start with.
+You don't need my specific hardware to get started. Because the S-Analyzer acts as a high-speed signal gateway,
+the firmware and GUI can be developed and tested on any standard RP2354B development board.
+
+My hardware is the finished "housing" for the logic, but the software developers can begin working on the protocol
+decoding and interface logic immediately using off-the-shelf dev kits. This allows for a modular, collaborative
+development cycle.
