@@ -1,6 +1,6 @@
 # 42bitLogicAnalyzer
 
-42 bit logic analyzer
+42bit logic analyzer
 
 A project to improve and enhance Dr. Gusman’s 24-bit logic analyzer concept.
 The S-Analyzer (Sane) for Everyone
