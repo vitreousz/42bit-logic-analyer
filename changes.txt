@@ -1,5 +1,11 @@
 Project: Logic Analyzer
 Version: 1.1
+
+Date: 2026-07-15
+-----------------------------------------------------------
+reuploaded logic_analyzer_schematic_1.1.pdf due to corruption
+
+
 Date: 2026-06-03
 -----------------------------------------------------------
 modified nets for better readability
